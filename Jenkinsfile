@@ -44,7 +44,7 @@ pipeline {
     }
     stage('Saying Hello') {
       when {
-        branch "source2'
+        branch "source2"
       }
       steps {
       echo "hello motherfu***r"
