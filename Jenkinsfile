@@ -46,13 +46,17 @@ pipeline {
       when {
         branch "source2'
       }
+      steps {
       echo "hello motherfu***r"
+            }
     }
     stage('Greeting') {
       when {
-        branch "main"
+        branch "source1"
       }
+      steps {
       echo "Surprise Motherf***r"
+      }
     }
   }
 
