@@ -42,8 +42,18 @@ pipeline {
       }
 
     }
-
-
+    stage('Saying Hello') {
+      when {
+        branch "source2'
+      }
+      echo "hello motherfu***r"
+    }
+    stage('Greeting') {
+      when {
+        branch "main"
+      }
+      echo "Surprise Motherf***r"
+    }
   }
 
 }
