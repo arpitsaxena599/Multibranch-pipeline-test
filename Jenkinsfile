@@ -14,11 +14,7 @@ pipeline {
 
       steps {
 
-        sh '''
-
-          java -version
-
-        '''
+        sh 'java -version'
 
       }
 
@@ -26,26 +22,17 @@ pipeline {
     stage('cat README') {
 
       when {
-
-        branch "source1"
-    }
+            branch "source1"
+          }
       steps {
-
-        sh '''
-
-          cat README.md
-
-        '''
-
+         sh 'cat README.md'
       }
 
     }
     stage('Saying Hello') {
-     
-     when {
+      when {
         branch "source2"
       }
-    
       steps {
       echo "hello motherfu***r"
             }
