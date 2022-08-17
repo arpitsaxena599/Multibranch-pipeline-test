@@ -14,7 +14,7 @@ pipeline {
 
       steps {
 
-        sh 'java -version'
+        sh 'mvn -version'
 
       }
 
@@ -25,7 +25,7 @@ pipeline {
             branch "source1"
           }
       steps {
-         sh 'cat README.md'
+         sh 'cat Jenkinsfile'
       }
 
     }
@@ -34,7 +34,7 @@ pipeline {
         branch "source2"
       }
       steps {
-      echo "hello motherfu***r"
+      echo "hello motherfu***r, i am here kill me"
             }
     }
     
@@ -45,7 +45,7 @@ pipeline {
       }
   
     steps {
-      echo "Surprise Motherf***r"
+      echo "hy Surprise Motherf***r"
       }
     
    }
